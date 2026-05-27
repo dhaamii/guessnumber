@@ -9,7 +9,7 @@ const result = document.querySelector(".result");
 const counter = document.querySelector(".counter");
 const guess = document.querySelector(".guess");
 
-const random = Math.trunc(Math.random() * 20) + 1;
+const random = Math.trunc(Math.random() * 100) + 1;
 console.log(random);
 
 const finalResult = function () {
@@ -28,7 +28,7 @@ check.addEventListener("click", function () {
   if (
     (number.textContent = parseInt(number.value)) &&
     number.textContent > 0 &&
-    number.textContent < 21
+    number.textContent < 101
   ) {
     counter.textContent++;
     if (counter.textContent < 5) {
